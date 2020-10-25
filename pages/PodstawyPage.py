@@ -1,4 +1,4 @@
-from Locators import PodstawyLocators
+from Locators.PodstawyLocators import PodstawyLocators
 
 
 class PodstawyPage(PodstawyLocators):

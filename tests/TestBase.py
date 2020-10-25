@@ -2,6 +2,8 @@ import unittest
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 
+from pages.GlownaPage import GlownaPage
+
 
 class TestBase(unittest.TestCase):
 
@@ -10,6 +12,8 @@ class TestBase(unittest.TestCase):
         cls.driver = webdriver.Chrome(ChromeDriverManager().install())
         cls.driver.implicitly_wait(10)
         cls.driver.maximize_window()
+        cls.glowna_page = GlownaPage(cls.driver)
+        cls.glowna_page.go_to_glowna_page()
 
     @classmethod
     def tearDownClass(cls):

@@ -8,9 +8,7 @@ class PodstawyTest(TestBase):
     def test_podstawy(self):
         driver = self.driver
 
-        self.driver.get("http://dawidkaruga.pl/testerczaki/podstawy")
-
-        podstawy_page = PodstawyPage(driver)
+        podstawy_page = self.glowna_page.go_to_podstawy_page()
         podstawy_page.wpisz_imie("Bartek")
         podstawy_page.wpisz_nazwisko("Bogucki")
         podstawy_page.wpisz_email("babo@interia.pl")
@@ -19,7 +17,3 @@ class PodstawyTest(TestBase):
         podstawy_page.akceptuj_regulamin()
         podstawy_page.wyslij_dane()
         podstawy_page.sprawdz_alert()
-
-
-if __name__ == '__main__':
-    unittest.main()
