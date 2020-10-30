@@ -1,7 +1,6 @@
-from webdriver_manager import driver
-
-from Locators.GlownaLocators import GlownaLocators
+from locators.GlownaLocators import GlownaLocators
 from pages.PodstawyPage import PodstawyPage
+from pages.WiecejElementowPage import WiecejElementowPage
 
 
 class GlownaPage(GlownaLocators):
@@ -15,4 +14,8 @@ class GlownaPage(GlownaLocators):
 
     def go_to_podstawy_page(self):
         self.driver.find_element(*self.PODSTAWY_ZACZNIJ).click()
-        return PodstawyPage(driver)
+        return PodstawyPage(self.driver)
+
+    def go_to_wiecej_elementow_page(self):
+        self.driver.find_element(*self.WIECEJ_ELEMENTOW_ZACZNIJ).click()
+        return WiecejElementowPage(self.driver)

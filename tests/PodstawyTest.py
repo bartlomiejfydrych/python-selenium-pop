@@ -1,13 +1,9 @@
-import unittest
-from pages.PodstawyPage import PodstawyPage
 from tests.TestBase import TestBase
 
 
 class PodstawyTest(TestBase):
 
     def test_podstawy(self):
-        driver = self.driver
-
         podstawy_page = self.glowna_page.go_to_podstawy_page()
         podstawy_page.wpisz_imie("Bartek")
         podstawy_page.wpisz_nazwisko("Bogucki")

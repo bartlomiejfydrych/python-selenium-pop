@@ -10,7 +10,7 @@ class TestBase(unittest.TestCase):
     @classmethod
     def setUp(cls):
         cls.driver = webdriver.Chrome(ChromeDriverManager().install())
-        cls.driver.implicitly_wait(10)
+        cls.driver.implicitly_wait(5)
         cls.driver.maximize_window()
         cls.glowna_page = GlownaPage(cls.driver)
         cls.glowna_page.go_to_glowna_page()
