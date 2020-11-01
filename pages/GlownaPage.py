@@ -1,4 +1,5 @@
 from locators.GlownaLocators import GlownaLocators
+from pages.AsercjaPage import AsercjaPage
 from pages.PodstawyPage import PodstawyPage
 from pages.WiecejElementowPage import WiecejElementowPage
 
@@ -19,3 +20,7 @@ class GlownaPage(GlownaLocators):
     def go_to_wiecej_elementow_page(self):
         self.driver.find_element(*self.WIECEJ_ELEMENTOW_ZACZNIJ).click()
         return WiecejElementowPage(self.driver)
+
+    def go_to_asercja_page(self):
+        self.driver.find_element(*self.ASERCJA_ZACZNIJ).click()
+        return AsercjaPage(self.driver)
