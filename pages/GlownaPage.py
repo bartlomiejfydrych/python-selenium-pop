@@ -1,6 +1,7 @@
 from locators.GlownaLocators import GlownaLocators
 from pages.AsercjaPage import AsercjaPage
 from pages.LokalizatoryPage import LokalizatoryPage
+from pages.OpcjonalnyFormularzPage import OpcjonalnyFormularzPage
 from pages.PodstawyPage import PodstawyPage
 from pages.UkryteElementyPage import UkryteElementyPage
 from pages.WiecejElementowPage import WiecejElementowPage
@@ -34,3 +35,7 @@ class GlownaPage(GlownaLocators):
     def go_to_ukryte_elementy_page(self):
         self.driver.find_element(*self.UKRYTE_ELEMENTY_ZACZNIJ).click()
         return UkryteElementyPage(self.driver)
+
+    def go_to_opcjonalny_formularz_page(self):
+        self.driver.find_element(*self.OPCJONALNY_FORMULARZ_ZACZNIJ).click()
+        return OpcjonalnyFormularzPage(self.driver)
