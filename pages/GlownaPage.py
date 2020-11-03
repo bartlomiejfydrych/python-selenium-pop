@@ -3,6 +3,7 @@ from pages.AsercjaPage import AsercjaPage
 from pages.LokalizatoryPage import LokalizatoryPage
 from pages.OpcjonalnyFormularzPage import OpcjonalnyFormularzPage
 from pages.PodstawyPage import PodstawyPage
+from pages.RamkaPage import RamkaPage
 from pages.UkryteElementyPage import UkryteElementyPage
 from pages.WiecejElementowPage import WiecejElementowPage
 
@@ -39,3 +40,7 @@ class GlownaPage(GlownaLocators):
     def go_to_opcjonalny_formularz_page(self):
         self.driver.find_element(*self.OPCJONALNY_FORMULARZ_ZACZNIJ).click()
         return OpcjonalnyFormularzPage(self.driver)
+
+    def go_to_ramka_page(self):
+        self.driver.find_element(*self.RAMKA_ZACZNIJ).click()
+        return RamkaPage(self.driver)
