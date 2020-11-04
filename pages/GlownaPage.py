@@ -6,6 +6,7 @@ from pages.PodstawyPage import PodstawyPage
 from pages.RamkaPage import RamkaPage
 from pages.UkryteElementyPage import UkryteElementyPage
 from pages.WiecejElementowPage import WiecejElementowPage
+from pages.WiecejRamekPage import WiecejRamekPage
 
 
 class GlownaPage(GlownaLocators):
@@ -44,3 +45,7 @@ class GlownaPage(GlownaLocators):
     def go_to_ramka_page(self):
         self.driver.find_element(*self.RAMKA_ZACZNIJ).click()
         return RamkaPage(self.driver)
+
+    def go_to_wiecej_ramek_page(self):
+        self.driver.find_element(*self.WIECEJ_RAMEK_ZACZNIJ).click()
+        return WiecejRamekPage(self.driver)

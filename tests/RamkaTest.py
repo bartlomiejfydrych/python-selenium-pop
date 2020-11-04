@@ -14,4 +14,4 @@ class RamkaTest(TestBase):
         ramka_page.akceptuj_regulamin()
         ramka_page.wyslij_dane()
         ramka_page.sprawdz_alert()
-        ramka_page.wroc_do_domyslnego_okna()
+        ramka_page.przejdz_do_domyslnego_okna()

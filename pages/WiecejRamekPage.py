@@ -1,17 +1,12 @@
-from locators.RamkaLocators import RamkaLocators
+from locators.WiecejRamekLocators import WiecejRamekLocators
 
 
-class RamkaPage(RamkaLocators):
+class WiecejRamekPage(WiecejRamekLocators):
 
     def __init__(self, driver):
         self.driver = driver
 
-    def przejdz_do_iframe(self):
-        self.driver.switch_to.frame(self.driver.find_element(*self.IFRAME))
-
-    def przejdz_do_domyslnego_okna(self):
-        self.driver.switch_to.default_content()
-
+    # Metody formularza:
     def wpisz_imie(self, imie):
         self.driver.find_element(*self.IMIE_INPUT).send_keys(imie)
 
@@ -35,3 +30,22 @@ class RamkaPage(RamkaLocators):
 
     def sprawdz_alert(self):
         assert self.driver.find_element(*self.GRATULACJE_ALERT).is_displayed()
+
+    # Metody ramek:
+    def przejdz_do_domyslnego_okna(self):
+        self.driver.switch_to.default_content()
+
+    def przejdz_do_iframe2(self):
+        self.driver.switch_to.frame(self.driver.find_element(*self.IFRAME2))
+
+    def przejdz_do_iframe3(self):
+        self.driver.switch_to.frame(self.driver.find_element(*self.IFRAME3))
+
+    def przejdz_do_iframe4(self):
+        self.driver.switch_to.frame(self.driver.find_element(*self.IFRAME4))
+
+    def przejdz_do_iframe5(self):
+        self.driver.switch_to.frame(self.driver.find_element(*self.IFRAME5))
+
+    def przejdz_do_parent_frame(self):
+        self.driver.switch_to.parent_frame()
