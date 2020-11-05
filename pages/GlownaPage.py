@@ -1,6 +1,7 @@
 from locators.GlownaLocators import GlownaLocators
 from pages.AsercjaPage import AsercjaPage
 from pages.LokalizatoryPage import LokalizatoryPage
+from pages.OknaZakladkiPage import OknaZakladkiPage
 from pages.OpcjonalnyFormularzPage import OpcjonalnyFormularzPage
 from pages.PodstawyPage import PodstawyPage
 from pages.RamkaPage import RamkaPage
@@ -49,3 +50,7 @@ class GlownaPage(GlownaLocators):
     def go_to_wiecej_ramek_page(self):
         self.driver.find_element(*self.WIECEJ_RAMEK_ZACZNIJ).click()
         return WiecejRamekPage(self.driver)
+
+    def go_to_okna_zakladki_page(self):
+        self.driver.find_element(*self.OKNA_ZAKLADKI_ZACZNIJ).click()
+        return OknaZakladkiPage(self.driver)
