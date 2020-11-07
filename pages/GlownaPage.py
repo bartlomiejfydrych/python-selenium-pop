@@ -1,5 +1,6 @@
 from locators.GlownaLocators import GlownaLocators
 from pages.AsercjaPage import AsercjaPage
+from pages.KomunikatyPage import KomunikatyPage
 from pages.LokalizatoryPage import LokalizatoryPage
 from pages.OknaZakladkiPage import OknaZakladkiPage
 from pages.OpcjonalnyFormularzPage import OpcjonalnyFormularzPage
@@ -54,3 +55,7 @@ class GlownaPage(GlownaLocators):
     def go_to_okna_zakladki_page(self):
         self.driver.find_element(*self.OKNA_ZAKLADKI_ZACZNIJ).click()
         return OknaZakladkiPage(self.driver)
+
+    def go_to_komunikaty_page(self):
+        self.driver.find_element(*self.KOMUNIKATY_ZACZNIJ).click()
+        return KomunikatyPage(self.driver)

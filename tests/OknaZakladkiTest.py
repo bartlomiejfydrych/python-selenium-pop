@@ -1,6 +1,7 @@
 from pages.PodstawyPage import PodstawyPage
 from tests.TestBase import TestBase
 
+
 # TODO: Zwrócić Dawidowi uwagę, że po pierwszym teście coś przeglądarka się nie zamyka i czy to tak ma być
 
 class OknaZakladkiTest(TestBase):
