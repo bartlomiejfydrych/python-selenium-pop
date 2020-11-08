@@ -32,6 +32,7 @@ class AsercjaPage(AsercjaLocators):
     def sprawdz_alert(self):
         assert self.driver.find_element(*self.GRATULACJE_ALERT).is_displayed()
 
+    # TODO: Przypomnieć Dawidowi, że mieliśmy rozmawiać o tym gdzie umieszczać asercje. Czy w page czy w teście.
     def asercje_sprawdzajace_formularz(self, imie, nazwisko, email, miasto, ulica):
         zmienne = [imie, nazwisko, email, miasto, ulica]
         web_elementy = [self.IMIE_INPUT, self.NAZWISKO_INPUT, self.EMAIL_INPUT, self.MIASTO_INPUT, self.ULICA_INPUT]

@@ -1,5 +1,3 @@
-from selenium.webdriver.common import alert
-
 from locators.KomunikatyLocators import KomunikatyLocators
 
 
