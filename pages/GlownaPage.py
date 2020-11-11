@@ -6,6 +6,7 @@ from pages.MenuPage import MenuPage
 from pages.OknaZakladkiPage import OknaZakladkiPage
 from pages.OpcjonalnyFormularzPage import OpcjonalnyFormularzPage
 from pages.PodstawyPage import PodstawyPage
+from pages.PrzeciagnijUpuscPage import PrzeciagnijUpuscPage
 from pages.RamkaPage import RamkaPage
 from pages.UkryteElementyPage import UkryteElementyPage
 from pages.WiecejElementowPage import WiecejElementowPage
@@ -64,3 +65,7 @@ class GlownaPage(GlownaLocators):
     def go_to_menu_page(self):
         self.driver.find_element(*self.MENU_ZACZNIJ).click()
         return MenuPage(self.driver)
+
+    def go_to_przeciagnij_upusc_page(self):
+        self.driver.find_element(*self.PRZECIAGNIJ_UPUSC_ZACZNIJ).click()
+        return PrzeciagnijUpuscPage(self.driver)

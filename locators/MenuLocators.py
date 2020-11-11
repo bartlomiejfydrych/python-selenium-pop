@@ -2,6 +2,7 @@ from selenium.webdriver.common.by import By
 
 
 class MenuLocators:
+
     # Elementy zadania 1:
     Z1_LINK2 = (By.CSS_SELECTOR, ".navbar-expand> .collapse > .navbar-nav > a:nth-child(2)")
     Z1_ALERT = (By.ID, "alert1")
