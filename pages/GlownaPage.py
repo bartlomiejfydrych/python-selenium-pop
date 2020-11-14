@@ -4,6 +4,7 @@ from pages.KliknijPrzytrzymajPage import KliknijPrzytrzymajPage
 from pages.KomunikatyPage import KomunikatyPage
 from pages.LokalizatoryPage import LokalizatoryPage
 from pages.MenuPage import MenuPage
+from pages.NiestandardoweListyPage import NiestandardoweListyPage
 from pages.OknaZakladkiPage import OknaZakladkiPage
 from pages.OpcjonalnyFormularzPage import OpcjonalnyFormularzPage
 from pages.PodstawyPage import PodstawyPage
@@ -74,3 +75,7 @@ class GlownaPage(GlownaLocators):
     def go_to_kliknij_przytrzymaj_page(self):
         self.driver.find_element(*self.KLIKNIJ_PRZYTRZYMAJ_ZACZNIJ).click()
         return KliknijPrzytrzymajPage(self.driver)
+
+    def go_to_niestandardowe_listy_page(self):
+        self.driver.find_element(*self.NIESTANDARDOWE_LISTY_ZACZNIJ).click()
+        return NiestandardoweListyPage(self.driver)
