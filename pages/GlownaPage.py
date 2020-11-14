@@ -1,5 +1,6 @@
 from locators.GlownaLocators import GlownaLocators
 from pages.AsercjaPage import AsercjaPage
+from pages.KliknijPrzytrzymajPage import KliknijPrzytrzymajPage
 from pages.KomunikatyPage import KomunikatyPage
 from pages.LokalizatoryPage import LokalizatoryPage
 from pages.MenuPage import MenuPage
@@ -69,3 +70,7 @@ class GlownaPage(GlownaLocators):
     def go_to_przeciagnij_upusc_page(self):
         self.driver.find_element(*self.PRZECIAGNIJ_UPUSC_ZACZNIJ).click()
         return PrzeciagnijUpuscPage(self.driver)
+
+    def go_to_kliknij_przytrzymaj_page(self):
+        self.driver.find_element(*self.KLIKNIJ_PRZYTRZYMAJ_ZACZNIJ).click()
+        return KliknijPrzytrzymajPage(self.driver)
