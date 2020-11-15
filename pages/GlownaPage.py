@@ -10,6 +10,7 @@ from pages.OpcjonalnyFormularzPage import OpcjonalnyFormularzPage
 from pages.PodstawyPage import PodstawyPage
 from pages.PrzeciagnijUpuscPage import PrzeciagnijUpuscPage
 from pages.RamkaPage import RamkaPage
+from pages.TabelePage import TabelePage
 from pages.UkryteElementyPage import UkryteElementyPage
 from pages.WiecejElementowPage import WiecejElementowPage
 from pages.WiecejRamekPage import WiecejRamekPage
@@ -79,3 +80,7 @@ class GlownaPage(GlownaLocators):
     def go_to_niestandardowe_listy_page(self):
         self.driver.find_element(*self.NIESTANDARDOWE_LISTY_ZACZNIJ).click()
         return NiestandardoweListyPage(self.driver)
+
+    def go_to_tabele_page(self):
+        self.driver.find_element(*self.TABELE_ZACZNIJ).click()
+        return TabelePage(self.driver)
