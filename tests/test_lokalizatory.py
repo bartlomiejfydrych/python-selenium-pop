@@ -1,7 +1,7 @@
 from tests.TestBase import TestBase
 
 
-class LokalizatoryTest(TestBase):
+class TestLokalizatory(TestBase):
 
     def test_lokalizatory(self):
         lokalizatory_page = self.glowna_page.go_to_lokalizatory_page()
