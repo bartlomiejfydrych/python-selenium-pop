@@ -1,12 +1,12 @@
 from locators.KomunikatyLocators import KomunikatyLocators
+from pages.BasePage import BasePage
+from log import log, for_all_methods
 
 
-class KomunikatyPage(KomunikatyLocators):
+@for_all_methods(log)
+class KomunikatyPage(KomunikatyLocators, BasePage):
     alert = None
     tekst = None
-
-    def __init__(self, driver):
-        self.driver = driver
 
     def przejdz_na_alert(self):
         KomunikatyPage.alert = self.driver.switch_to.alert
@@ -15,13 +15,13 @@ class KomunikatyPage(KomunikatyLocators):
         KomunikatyPage.tekst = KomunikatyPage.alert.text
 
     def kliknij_wyswietl_komunikat(self):
-        self.driver.find_element(*self.WYSWIETL_KOMUNIKAT_BUTTON).click()
+        self.find(self.WYSWIETL_KOMUNIKAT_BUTTON).click()
 
     def kliknij_sprawdz_komunikat(self):
-        self.driver.find_element(*self.SPRAWDZ_KOMUNIKAT_BUTTON).click()
+        self.find(self.SPRAWDZ_KOMUNIKAT_BUTTON).click()
 
     def wklej_komunikat(self):
-        self.driver.find_element(*self.KOMUNIKAT_INPUT).send_keys(KomunikatyPage.tekst)
+        self.find(self.KOMUNIKAT_INPUT).send_keys(KomunikatyPage.tekst)
 
     def akceptuj_alert(self):
         KomunikatyPage.alert.accept()
@@ -33,4 +33,4 @@ class KomunikatyPage(KomunikatyLocators):
         KomunikatyPage.alert.send_keys(tekst)
 
     def sprawdz_poprawnosc(self):
-        assert self.driver.find_element(*self.GRATULACJE_ALERT).is_displayed()
+        assert self.find(self.GRATULACJE_ALERT).is_displayed()

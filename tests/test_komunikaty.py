@@ -1,7 +1,7 @@
 from tests.TestBase import TestBase
 
 
-class KomunikatyTest(TestBase):
+class TestKomunikaty(TestBase):
 
     def test_komunikaty(self):
         komunikaty_page = self.glowna_page.go_to_komunikaty_page()

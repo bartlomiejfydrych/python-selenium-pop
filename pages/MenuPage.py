@@ -1,9 +1,10 @@
 from selenium.webdriver import ActionChains
 
 from locators.MenuLocators import MenuLocators
+from pages.BasePage import BasePage
 
 
-class MenuPage(MenuLocators):
+class MenuPage(MenuLocators, BasePage):
     # TODO: Poprosić Dawida przy refactoringu by dokładnie to wszystko zbadał
     # Trzeba było to usunąć bo nazwaklasy.actions nie działało i trzeba było dać self.
     # actions = None

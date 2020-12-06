@@ -1,8 +1,7 @@
 from tests.TestBase import TestBase
 
 
-class AsercjaTest(TestBase):
-
+class TestAsercja(TestBase):
     imie = "Wiktor"
     nazwisko = "Frankenstein"
     email = "wiktorfrank@amorki.pl"
