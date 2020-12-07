@@ -428,7 +428,7 @@ function filter_table(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>report.html</h1>
-    <p>Report generated on 06-Dec-2020 at 10:42:09 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.0.0</p>
+    <p>Report generated on 07-Dec-2020 at 15:20:13 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.0.0</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -444,8 +444,8 @@ function filter_table(elem) { // eslint-disable-line no-unused-vars
         <td>Python</td>
         <td>3.8.5</td></tr></table>
     <h2>Summary</h2>
-    <p>6 tests ran in 13.55 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">6 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>3 tests ran in 8.70 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">3 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -459,96 +459,53 @@ function filter_table(elem) { // eslint-disable-line no-unused-vars
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">tests/test_menu.py::TestMenu::test_zadanie1</td>
-          <td class="col-duration">5.20</td>
+          <td class="col-name">tests/test_niestandardowe_listy.py::TestNiestandardoweListy::test_zadanie1</td>
+          <td class="col-duration">5.41</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
             <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/> 
 go_to_glowna_page
-go_to_menu_page
+go_to_niestandardowe_listy_page
 <br/> -----------------------------Captured stderr setup------------------------------ <br/>[WDM] - Current google-chrome version is 87.0.4280
 [WDM] - Get LATEST driver version for 87.0.4280
 [WDM] - Driver [C:\Users\Bartek\.wdm\drivers\chromedriver\win32\87.0.4280.88\chromedriver.exe] found in cache
 <br/> -------------------------------Captured log setup------------------------------- <br/>INFO     WDM:logger.py:24 Current google-chrome version is 87.0.4280
 INFO     WDM:logger.py:14 Get LATEST driver version for 87.0.4280
-INFO     WDM:logger.py:14 Driver [C:\Users\Bartek\.wdm\drivers\chromedriver\win32\87.0.4280.88\chromedriver.exe] found in cache<br/> ------------------------------Captured stdout call------------------------------ <br/>z1_kliknij_link2
+INFO     WDM:logger.py:14 Driver [C:\Users\Bartek\.wdm\drivers\chromedriver\win32\87.0.4280.88\chromedriver.exe] found in cache<br/> ------------------------------Captured stdout call------------------------------ <br/>z1_kliknij_wybierz_button
+z1_kliknij_element
 z1_sprawdz_alert
 <br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">tests/test_menu.py::TestMenu::test_zadanie2</td>
-          <td class="col-duration">0.48</td>
+          <td class="col-name">tests/test_niestandardowe_listy.py::TestNiestandardoweListy::test_zadanie2</td>
+          <td class="col-duration">0.47</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
             <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>go_to_glowna_page
-go_to_menu_page
-<br/> ------------------------------Captured stdout call------------------------------ <br/>z2_rozwin_liste
-z2_kliknij_link3
+go_to_niestandardowe_listy_page
+<br/> ------------------------------Captured stdout call------------------------------ <br/>z2_kliknij_wybierz_button
+z2_wyszukaj_tekst
+z2_kliknij_element
 z2_sprawdz_alert
 <br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">tests/test_menu.py::TestMenu::test_zadanie3</td>
-          <td class="col-duration">0.33</td>
+          <td class="col-name">tests/test_niestandardowe_listy.py::TestNiestandardoweListy::test_wszystkie_zadania</td>
+          <td class="col-duration">2.62</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
             <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>go_to_glowna_page
-go_to_menu_page
-<br/> ------------------------------Captured stdout call------------------------------ <br/>z3_kliknij_liste
-z3_kliknij_link3_c
-z3_sprawdz_alert
-<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">tests/test_menu.py::TestMenu::test_zadanie4</td>
-          <td class="col-duration">0.87</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>go_to_glowna_page
-go_to_menu_page
-<br/> ------------------------------Captured stdout call------------------------------ <br/>z4_kliknij_link3_b
-z4_sprawdz_alert
-<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">tests/test_menu.py::TestMenu::test_zadanie5</td>
-          <td class="col-duration">1.39</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>go_to_glowna_page
-go_to_menu_page
-<br/> ------------------------------Captured stdout call------------------------------ <br/>z5_kliknij_link3_b5
-z5_sprawdz_alert
-<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">tests/test_menu.py::TestMenu::test_wszystkie_zadania</td>
-          <td class="col-duration">5.06</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>go_to_glowna_page
-go_to_menu_page
-<br/> ------------------------------Captured stdout call------------------------------ <br/>z1_kliknij_link2
+go_to_niestandardowe_listy_page
+<br/> ------------------------------Captured stdout call------------------------------ <br/>z1_kliknij_wybierz_button
+z1_kliknij_element
 z1_sprawdz_alert
-z2_rozwin_liste
-z2_kliknij_link3
+z2_kliknij_wybierz_button
+z2_wyszukaj_tekst
+z2_kliknij_element
 z2_sprawdz_alert
-z3_kliknij_liste
-z3_kliknij_link3_c
-z3_sprawdz_alert
-z4_kliknij_link3_b
-z4_sprawdz_alert
-z5_kliknij_link3_b5
-z5_sprawdz_alert
 <br/></div></td></tr></tbody></table></body></html>
