@@ -1,18 +1,18 @@
 from locators.OknaZakladkiLocators import OknaZakladkiLocators
+from pages.BasePage import BasePage
 from pages.PodstawyPage import PodstawyPage
+from log import log, for_all_methods
 
 
-class OknaZakladkiPage(OknaZakladkiLocators):
-
-    def __init__(self, driver):
-        self.driver = driver
+@for_all_methods(log)
+class OknaZakladkiPage(OknaZakladkiLocators, BasePage):
 
     def otworz_podstawy_nowa_karta(self):
-        self.driver.find_element(*self.PODSTAWY_KARTA).click()
+        self.find(self.PODSTAWY_KARTA).click()
         return PodstawyPage(self.driver)
 
     def otworz_podstawy_nowe_okno(self):
-        self.driver.find_element(*self.PODSTAWY_OKNO).click()
+        self.find(self.PODSTAWY_OKNO).click()
         return PodstawyPage(self.driver)
 
     def powieksz_okno(self):
