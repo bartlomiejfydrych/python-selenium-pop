@@ -1,7 +1,7 @@
 from tests.TestBase import TestBase
 
 
-class PodstawyTest(TestBase):
+class TestPodstawy(TestBase):
 
     def test_podstawy(self):
         podstawy_page = self.glowna_page.go_to_podstawy_page()
