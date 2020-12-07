@@ -1,7 +1,7 @@
 from tests.TestBase import TestBase
 
 
-class OpcjonalnyFormularzTest(TestBase):
+class TestOpcjonalnyFormularz(TestBase):
 
     def test_opcjonalny_formularz(self):
         opcjonalny_formularz_page = self.glowna_page.go_to_opcjonalny_formularz_page()
