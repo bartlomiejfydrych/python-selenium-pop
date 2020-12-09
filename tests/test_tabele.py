@@ -1,7 +1,7 @@
 from tests.TestBase import TestBase
 
 
-class TabeleTest(TestBase):
+class TestTabele(TestBase):
 
     def test_tabele(self):
         tabele_page = self.glowna_page.go_to_tabele_page()
