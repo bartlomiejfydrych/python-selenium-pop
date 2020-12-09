@@ -1,7 +1,7 @@
 from tests.TestBase import TestBase
 
 
-class RamkaTest(TestBase):
+class TestRamka(TestBase):
 
     def test_ramka(self):
         ramka_page = self.glowna_page.go_to_ramka_page()
