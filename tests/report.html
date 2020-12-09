@@ -428,7 +428,7 @@ function filter_table(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>report.html</h1>
-    <p>Report generated on 07-Dec-2020 at 16:11:36 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.0.0</p>
+    <p>Report generated on 09-Dec-2020 at 16:13:35 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.0.0</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -444,8 +444,8 @@ function filter_table(elem) { // eslint-disable-line no-unused-vars
         <td>Python</td>
         <td>3.8.5</td></tr></table>
     <h2>Summary</h2>
-    <p>1 tests ran in 7.83 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">1 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>4 tests ran in 51.70 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">4 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -459,25 +459,66 @@ function filter_table(elem) { // eslint-disable-line no-unused-vars
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">tests/test_podstawy.py::TestPodstawy::test_podstawy</td>
-          <td class="col-duration">7.61</td>
+          <td class="col-name">tests/test_przeciagnij_upusc.py::TestPrzeciagnijUpusc::test_zadanie1</td>
+          <td class="col-duration">16.08</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
             <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/> 
 go_to_glowna_page
+go_to_przeciagnij_upusc_page
 <br/> -----------------------------Captured stderr setup------------------------------ <br/>[WDM] - Current google-chrome version is 87.0.4280
 [WDM] - Get LATEST driver version for 87.0.4280
-[WDM] - Driver [C:\Users\Bartek\.wdm\drivers\chromedriver\win32\87.0.4280.88\chromedriver.exe] found in cache
+[WDM] - Get LATEST driver version for 87.0.4280
+[WDM] - Trying to download new driver from http://chromedriver.storage.googleapis.com/87.0.4280.88/chromedriver_win32.zip
+[WDM] - Driver has been saved in cache [C:\Users\Bartek\.wdm\drivers\chromedriver\win32\87.0.4280.88]
 <br/> -------------------------------Captured log setup------------------------------- <br/>INFO     WDM:logger.py:24 Current google-chrome version is 87.0.4280
 INFO     WDM:logger.py:14 Get LATEST driver version for 87.0.4280
-INFO     WDM:logger.py:14 Driver [C:\Users\Bartek\.wdm\drivers\chromedriver\win32\87.0.4280.88\chromedriver.exe] found in cache<br/> ------------------------------Captured stdout call------------------------------ <br/>go_to_podstawy_page
-wpisz_imie
-wpisz_nazwisko
-wpisz_email
-wpisz_miasto
-wpisz_ulica
-akceptuj_regulamin
-wyslij_dane
-sprawdz_alert
+INFO     WDM:logger.py:14 Get LATEST driver version for 87.0.4280
+INFO     WDM:logger.py:14 Trying to download new driver from http://chromedriver.storage.googleapis.com/87.0.4280.88/chromedriver_win32.zip
+INFO     WDM:logger.py:14 Driver has been saved in cache [C:\Users\Bartek\.wdm\drivers\chromedriver\win32\87.0.4280.88]<br/> ------------------------------Captured stdout call------------------------------ <br/>z1_przenies_elementy_do_grupy_b
+z1_sprawdz_alert_1
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/test_przeciagnij_upusc.py::TestPrzeciagnijUpusc::test_zadanie2</td>
+          <td class="col-duration">14.65</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>go_to_glowna_page
+go_to_przeciagnij_upusc_page
+<br/> ------------------------------Captured stdout call------------------------------ <br/>z2_posortuj_elementy
+z2_sprawdz_alert_2
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/test_przeciagnij_upusc.py::TestPrzeciagnijUpusc::test_zadanie3</td>
+          <td class="col-duration">0.41</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>go_to_glowna_page
+go_to_przeciagnij_upusc_page
+<br/> ------------------------------Captured stdout call------------------------------ <br/>z3_przenies_elementy_do_grupy_y_html5
+z3_sprawdz_alert_3
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/test_przeciagnij_upusc.py::TestPrzeciagnijUpusc::test_wszystkie_zadania</td>
+          <td class="col-duration">20.25</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>go_to_glowna_page
+go_to_przeciagnij_upusc_page
+<br/> ------------------------------Captured stdout call------------------------------ <br/>z1_przenies_elementy_do_grupy_b
+z1_sprawdz_alert_1
+z2_posortuj_elementy
+z2_sprawdz_alert_2
+z3_przenies_elementy_do_grupy_y_html5
+z3_sprawdz_alert_3
 <br/></div></td></tr></tbody></table></body></html>
