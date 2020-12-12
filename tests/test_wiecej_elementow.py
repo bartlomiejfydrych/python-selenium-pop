@@ -1,7 +1,7 @@
 from tests.TestBase import TestBase
 
 
-class WiecejElementowTest(TestBase):
+class TestWiecejElementow(TestBase):
 
     def test_wiecej_elementow(self):
         wiecej_elementow_page = self.glowna_page.go_to_wiecej_elementow_page()
