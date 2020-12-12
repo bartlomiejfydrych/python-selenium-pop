@@ -1,7 +1,7 @@
 from tests.TestBase import TestBase
 
 
-class UkryteElementyTest(TestBase):
+class TestUkryteElementy(TestBase):
 
     def test_ukryte_elementy(self):
         ukryte_elementy_page = self.glowna_page.go_to_ukryte_elementy_page()
