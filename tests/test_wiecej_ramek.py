@@ -1,7 +1,7 @@
 from tests.TestBase import TestBase
 
 
-class WiecejRamekTest(TestBase):
+class TestWiecejRamek(TestBase):
 
     def test_wiecej_ramek(self):
         wiecej_ramek_page = self.glowna_page.go_to_wiecej_ramek_page()
